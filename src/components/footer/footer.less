@@ -1,0 +1,30 @@
+@width: calc(1920px - 640px);
+footer {
+  padding: 10px 50px;
+  user-select: none;
+  min-width: @width;
+
+  .index, .github {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .index {
+    i {
+      font-family: "Harlow Solid", serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 30px;
+      margin-right: 10px;
+    }
+  }
+
+  .github {
+    float: right;
+
+    &:before {
+      content: '\F30E';
+      font-family: "Ionicons", serif;
+      margin-right: 2px;
+    }
+  }
+}

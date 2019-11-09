@@ -1,0 +1,48 @@
+@height: 68px;
+.menu {
+  height: @height;
+  display: inline-block;
+
+  .item {
+    display: inline-block;
+    line-height: @height;
+    min-height: @height;
+    min-width: 100px;
+    padding: 0 12px;
+    text-align: center;
+
+    a {
+      color: rgba(255, 255, 255);
+      display: inline-block;
+      font-size: 15px;
+      line-height: @height;
+      width: 100%;
+    }
+
+    .active {
+      color: rgb(255, 255, 255);
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .logo {
+    i {
+      font-family: "Harlow Solid", serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+      margin-right: 10px;
+    }
+
+    &:hover {
+      a {
+        i, strong {
+          color: rgb(253, 76, 91);
+        }
+      }
+    }
+  }
+}
